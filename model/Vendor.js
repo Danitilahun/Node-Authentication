@@ -44,8 +44,10 @@ const vendorSchema = new Schema({
     default: Date.now,
   },
   accountVerification: {
-    emailVerified: Boolean,
-    phoneVerified: Boolean,
+    emailVerified: {
+      type: Boolean,
+      default: false,
+    },
   },
   paymentInformation: {
     stripeAccountID: String,
