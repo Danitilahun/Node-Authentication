@@ -1,7 +1,7 @@
 const ROLES_LIST = {
-  Admin: parseInt(process.env.ADMIN_ROLE),
-  Editor: parseInt(process.env.EDITOR_ROLE),
-  User: parseInt(process.env.USER_ROLE),
+  admin: parseInt(process.env.ADMIN_ROLE),
+  vendor: parseInt(process.env.VENDER_ROLE),
+  customer: parseInt(process.env.CUSTOMER_ROLE),
 };
 
-module.exports = ROLES_LIST;
+export default ROLES_LIST;
